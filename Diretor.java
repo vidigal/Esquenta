@@ -36,4 +36,9 @@ public class Diretor extends Pessoa {
             System.out.println(filme.getNome());
         }
     }
+
+    @Override
+    public String toString() {
+        return super.getNome() + " - Prêmios: " + this.getQuantidadePremios();
+    }
 }
